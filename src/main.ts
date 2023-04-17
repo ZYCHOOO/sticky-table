@@ -1,7 +1,6 @@
 import { createApp } from 'vue'
-import './style.css'
 import App from './App.vue'
-import StickyTable from './StickyTable'
+import StickyTable from './index'
 
 const app = createApp(App)
 

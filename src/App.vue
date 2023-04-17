@@ -1,7 +1,6 @@
 <template>
   <div class="demo-container">
     <sticky-table
-      border
       :data="tableData"
       :columns="tableColumns"
     />
@@ -9,8 +8,14 @@
 </template>
 
 <script setup lang="ts">
-import { ColumnItem } from './StickyTable/src/type'
-const tableData: any[] = [
+import { ColumnItem } from './type'
+interface TableItem {
+  name: string,
+  gender: string,
+  address: string,
+  isSticky?: boolean
+}
+const tableData: TableItem[] = [
   { name: '锅意义', gender: '男', address: '广州市天河区燕塘', isSticky: true },
   { name: '走一封', gender: '男', address: '珠海市', isSticky: true },
   { name: '舟家暴', gender: '女', address: '广州市天河区车陂', isSticky: true },

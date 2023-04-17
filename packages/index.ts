@@ -1,5 +1,5 @@
 import { App } from 'vue'
-import stickyTable from './src/index.vue'
+import stickyTable from './index.vue'
 
 export default {
   install(app: App) {

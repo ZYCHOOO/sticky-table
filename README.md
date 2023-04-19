@@ -44,7 +44,7 @@ app.mount('#app')
 ## Events
 
 |  Name   | Description  | Parameters  |
-|  ----  | ----  |
+|  ----  | ----  | ----  |
 | row-click  | triggers when a row is clicked | row  |
 
 

@@ -6,6 +6,7 @@
   </a>
 </p>
 
+- 🔥 Vue3 Composition Api
 - 💻 Written in TypeScript
 
 ## Installation
@@ -14,7 +15,7 @@
    npm install @boacho/sticky-table
 ```
 
-## usage
+## Usage
 
 ```typescript
 // main.ts
@@ -28,6 +29,23 @@ const app = createApp(App)
 app.use(StickyTable)
 app.mount('#app')
 ```
+
+## Attributes
+
+|  Name   | Description  |  Type   | Accepted Value  |  Default   |
+|  ----  | ----  |  ----  | ----  |  ----  |
+| data  | Table data | Array  | - | -  |
+| columns  | Table Columns | Array  | - | -  |
+| border  | to show border or not | Boolean  | - | false  |
+| stickyKey  | key that controls rows to stick to the top | String  | - | 'isSticky'  |
+| max  |  Maximum number of rows displayed in the sticky section  | Number  | - | 3  |
+| rowHeight  | row's height | Number  | - | 40  |
+
+## Events
+
+|  Name   | Description  | Parameters  |
+|  ----  | ----  |
+| row-click  | triggers when a row is clicked | row  |
 
 
 
